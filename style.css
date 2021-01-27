@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+  background: #ffde59;
+  font-family: "Architects Daughter";
+  font-size: 1.5rem;
+  padding: 10px 100px 10px 10px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  position: relative;
+  text-transform: uppercase;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to right, #fff, #f7e956);
+  bottom: 6px;
+  z-index: -1;
+}
+
+button {
+  margin-bottom: 20px;
+  border: 3px solid black;
+  background: linear-gradient(to right, #f7f4cd, #f7e956);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: color 1s;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.joke {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  display: inline-block;
+  position: relative;
+  padding: 30px 40px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background: white;
+  margin-bottom: 60px;
+  box-shadow: 1px 1px 2px black, 0 0 25px #f75a00, 0 0 5px #f75a00;
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  height: 50px;
+  width: 90px;
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset,
+    -25px -2px 0 0 #000 inset;
+}
